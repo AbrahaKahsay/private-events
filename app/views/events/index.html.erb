@@ -5,7 +5,7 @@
       <li>
         <strong> <%= event.title%> </strong><br>
         location: <%= event.location%><br>
-        date: <%= event.date%>
+        date: <%= event.date.strftime('%Y-%m-%d %H:%M')%>
       </li>
     <% end %>
 </ul>
