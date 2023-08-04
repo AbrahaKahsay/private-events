@@ -8,7 +8,7 @@
 
 
 # clear existing data 
-Event.:destroy_all
+Event.destroy_all
 
 events = Event.create([
     {
@@ -19,7 +19,7 @@ events = Event.create([
     {
         title: "Music Festival",
         location: "Central perk",
-        date: DateTime.new(2023, 10, 10, 8, 0)
+        date: DateTime.new(2023, 10, 10, 8, 30)
     },
     {
         title: "Football game",
