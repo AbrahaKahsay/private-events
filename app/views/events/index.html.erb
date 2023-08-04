@@ -5,7 +5,12 @@
       <li>
         <strong> <%= event.title%> </strong><br>
         Location: <%= event.location%><br>
-        Date: <%= event.date.strftime('%Y-%m-%d %H:%M')%>
+        Date: <%= event.date.strftime('%Y-%m-%d %H:%M')%><br>
+        <% if event.creator %>
+            Creator: <%= link_to event.creator.name, user_path(event.creator) %>
+        <% else %>
+            Creator: Unknown
+         <% end %>
       </li>
     <% end %>
 </ul>
