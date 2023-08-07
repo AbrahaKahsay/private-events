@@ -1,0 +1,7 @@
+<h1><%= @event.title %></h1>
+
+<p><strong>Location:</strong> <%= @event.location %></p>
+<p><strong>Date:</strong> <%= @event.date.strftime('%Y-%m-%d %H:%M') %></p>
+<p><strong>Creator:</strong> <%= link_to @event.creator.name, user_path(@event.creator) %></p>
+
+<%= link_to 'Back', events_path %>
